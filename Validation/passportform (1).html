@@ -1,0 +1,189 @@
+<html>
+<head>
+<style>
+	.myclass{
+		color: blue;
+		 width:100%;
+		  height="80%";
+		  cellspacing="0px";
+	}
+	.fd{
+		text-align:right;
+	}
+	#id1{
+		color:red;
+	}
+	tr{
+		background: #cccccc;
+	}
+</style>
+	</head>
+	<body>
+		<h3 style="background: #9999ff;color:white; text-align: center;">Online passport registration at Indian Missions/Posts for NRIs</h3>
+		<br>
+		<form name='registration' onSubmit="return formValidation();">
+		<table class="myclass" border =1 cellspacing="0px">
+			<tr><td colspan="4" style="color:red;"><b>Note: Columns marked with * are complusory to fill in</b></td></tr>
+			<tr><td class="fd">Indian Mission<i id="id1"> *</i></td><td colspan="3"><select value="id1" selected="selected">
+				<option value="id1">USA-SAN FRANCISCO</option>
+				<option>UK</option>
+				<option>AUSTRALIA</option>
+				<option>ENGLAND</option>
+				<option>DUBAI</option>
+			</select></td><tr>
+				<tr><td class="fd">Service Desired<i id="id1">*</i></td>
+					<td colspan="3"><select value="id1" selected="selected">
+						<option value="id1">Select service</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td class="fd">Surname</td>
+					<td colspan="3"><textarea rows="1" cols="50"></textarea> </td>
+				</tr>
+				<tr>
+					<td class="fd" rowspan="2" style="padding-left: 30px;margin: 3px">Given Name/s<i id="id1">*</i></td>
+					<td colpspan="3"><textarea rows="1" cols="50"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="3" style="text-align:left;">(Name should be in full,Initilal and titles such as Mr,Mrs,Dr etc. are allowed)</td></tr>
+				<tr>
+					<td colspan="4" style="color:red; padding-left: 10px"><b>If you have ever changed your name click on the box<input type="checkbox" name="checkbox"/>and indicate previous name(s) in full</b>
+					</td>
+				</tr>
+				<tr>
+					<td class="fd" >Previous Name</td><td colspan="3"><textarea style="background: #66cccc;" rows="1" cols="30"  class="textarea"></textarea></td></tr>
+				<tr><td class="fd">Sex<i id="id1">*</i></td><td><select>
+					<option>male</option>
+					<option>female</option></select></td><td class="fd">DoB<i id="id1">*</i></td><td><input type="date"/></td></tr>
+			<tr>
+				<td class="fd" >Place of Birth<i id="id1">*</i></td>
+				<td><textarea rows="1" cols="30"  class="textarea"></textarea></td>
+				<td class="fd">District/country<i id="id1">*</i></td>
+				<td><textarea cols="30" rows="1"></textarea></td>
+			</tr>
+		<tr>
+				<td class="fd" >Qualification<i id="id1">*</i></td>
+				<td><textarea rows="1" cols="30"  class="textarea"></textarea></td>
+				<td class="fd">Profession<i id="id1">*</i></td>
+				<td><textarea cols="30" rows="1"></textarea></td>
+			</tr>
+			<tr>
+				<td class="fd" >Visible Mark<i id="id1">*</i></td>
+				<td><textarea  rows="1" cols="30"  class="textarea"></textarea></td>
+				<td class="fd">Height(cm)<i id="id1">*</i></td>
+				<td><input text="Number"/></td>
+			</tr>
+			<tr>
+				<td class="fd" >Color of Eyes<i id="id1">*</i></td>
+				<td><textarea rows="1" cols="30"  class="textarea"></textarea></td>
+				<td class="fd">Color of hair<i id="id1">*</i></td>
+				<td><textarea cols="30" rows="1"></textarea></td>
+			</tr>
+			<tr height="20px">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td  rowspan="2" class="fd" >Address to be printed in passport<i id="id1">*</i></td>
+				<td height="40px"><textarea rows="1" cols="30"  class="textarea"></textarea></td>
+				<td rowspan="1" class="fd">Other address<i id="id1">*</i></td>
+				<td height="20px"><textarea cols="30" rows="1"></textarea></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td rowspan="2" class="fd" height="40px">Atleast first two address lines have to be filles<i id="id1">*</i></td>
+				<td><textarea rows="1" cols="30"  class="textarea" height="20px"></textarea></td>
+				<td rowspan="2" height="40px" class="fd"></td>
+				<td><textarea cols="30" rows="1"></textarea></td>
+			</tr>
+			<tr>
+				<td  height="20px"><textarea rows="1" cols="30"></textarea></td>
+				<td height="20px"><textarea rows="1" cols="30"></textarea></td>
+			</tr>
+			<tr>
+				<td class="fd">Phone Number<i id="id1">*</i></td>
+				<td><input type="Number"/></td>
+				<td class="fd">Mobile Number<i id="id1">*</i></td>
+				<td><input type="Number"/></td>
+			</tr>
+			<tr>
+				<td class="fd">Email address<i id="id1">*</i></td>
+				<td><input type="Email"/></td>
+				<td class="fd"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="4" style="color:red;padding-left: 10px"><b>Applicants Family details(all names should be in full,initials,titles such as mr,Mrs,Drs etc. are not allowed) </b></td>
+			</tr>
+			<tr>
+			<td class="fd">Marital status<i id="id1"> *</i></td><td colspan="3"><select value="id1" selected="selected">
+				<option value="id1">Married</option>
+				<option>Single</option>
+				<option>Unmarried</option>
+				</select>
+			</td>
+			<tr>
+			<tr>
+			<td class="fd" >Spouse's Name</td>
+			<td colspan="3" ><textarea rows="1" cols="50" style="background: #66cccc;"></textarea> </td>
+			</td>
+			<tr>
+			<td class="fd" >Spouse's Nationality</td>
+			<td colspan="3"><textarea rows="1" cols="50" style="background: #66cccc"></textarea> </td>
+			</tr>
+			<tr>
+			<td class="fd" >Father's Name<i id="id1"> *</i></td>
+			<td colspan="3"><textarea rows="1" cols="60"></textarea> </td>
+			</tr>
+			<tr>
+			<td class="fd" >Father's Birth country</td>
+			<td colspan="3"><textarea rows="1" cols="60"></textarea> </td>
+			</tr>
+			<tr>
+			<td class="fd" height="25px">Father's Nationality at<br> the time of applicant's birth</td>
+			<td colspan="3"><textarea rows="1" cols="60"></textarea> </td>
+			</tr>
+			<tr>
+			<td class="fd" height="25px">Mother's Name<i id="id1"> *</i></td>
+			<td colspan="3"><textarea rows="1" cols="50"></textarea> </td>
+			</tr>
+			<tr>
+			<td class="fd" >Mother's Birth country</td>
+			<td colspan="3"><textarea rows="1" cols="60"></textarea> </td>
+			</tr>
+			
+			<tr>
+			<td class="fd" height="25px">Mother's Nationality at<br> the time of applicant's birth</td>
+			<td colspan="3"><textarea rows="1" cols="60"></textarea> </td>
+			</tr>
+			<tr>
+			<td colspan="4" height="25px"></td>
+			</tr>	
+			<tr>
+				<td colspan="4" style="color:red; padding-left: 10px"><b>If you have held a passport or hold a passport  click on this box<input type="checkbox" name="checkbox"/>and fill details below</b>
+				</td>
+				</tr>
+			<tr>
+				<td class="fd">Old Existing passport Numbe</td>
+				<td><input type="Number"/></td>
+				<td class="fd">Issue date</td>
+				<td><input type="date"/></td>
+			</tr>
+			<tr>
+				<td class="fd">Place of Issue</td>
+				<td><input type="text"/></td>
+				<td class="fd">File Number</td>
+				<td><input type="Number"/></td>
+			</tr>
+			<tr><td colspan="4"><input type="submit" class="myclass"/></td></tr>
+			
+		
+		
+		
+		</table> 
+	</form>
+	</body>
+</html>
