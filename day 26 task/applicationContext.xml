@@ -7,9 +7,9 @@
 
 <constructor-arg name="cid" value="8888"/>
 
-<constructor-arg name="cname" value="usha"/>
+<constructor-arg name="cname" value="saikumar"/>
 
-<constructor-arg name="caddress" value="gpl"/>
+<constructor-arg name="caddress" value="vgr"/>
 
 </bean>
 
